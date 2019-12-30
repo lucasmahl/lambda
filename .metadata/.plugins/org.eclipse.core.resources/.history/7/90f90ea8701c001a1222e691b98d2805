@@ -1,0 +1,22 @@
+package model.services;
+
+import java.util.List;
+import java.util.function.Predicate;
+
+import entities.Product;
+
+public class ProductService {
+
+	// soma todos produtos com inicial T
+	public double filterSum(List<Product> list, Predicate<Product> criterio) {
+		double soma = 0.0;
+		for (Product p : list) {
+			if (p.getName().toUpperCase().charAt(0) == 'T') {
+				soma += p.getPrice();
+			}
+		}
+		return soma;
+
+	}
+
+}

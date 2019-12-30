@@ -1,0 +1,12 @@
+INDEX VERSION 1.131+C:\Users\Lucas\lambda\.metadata\.plugins\org.eclipse.jdt.core
+4281768364.index
+714477964.index
+817875578.index
+1859000125.index
+1047395367.index
+2169061843.index
+1186410501.index
+4210876544.index
+1121139723.index
+3560650279.index
+3328835229.index

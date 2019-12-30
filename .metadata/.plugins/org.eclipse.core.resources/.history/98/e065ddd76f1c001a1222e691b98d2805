@@ -1,0 +1,23 @@
+package model.services;
+
+import java.util.List;
+
+import entities.Product;
+
+public class ProductService {
+
+	public double filterSum(List<Product> list) {
+		double soma = 0.0;
+		
+		//soma todos produtos com inicial T
+		for (Product p : list) {
+			if (p.getName().toUpperCase().charAt(0)=='T') {
+				sum += p.getPrice();
+			}
+		}
+		
+		return soma;
+		
+	}
+	
+}

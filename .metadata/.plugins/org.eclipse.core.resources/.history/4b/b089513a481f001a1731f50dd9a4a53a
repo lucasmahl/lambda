@@ -1,0 +1,31 @@
+package application;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		System.out.print("Caminho do excel: ");
+		String path = sc.nextLine();
+		
+		try (BufferedReader br = new BufferedReader(new FileReader(path))){
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+		sc.close();
+		
+		
+	}
+
+}

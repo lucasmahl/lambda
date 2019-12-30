@@ -1,0 +1,11 @@
+package model.services;
+
+import java.util.List;
+
+public class ProductService {
+
+	public double filterSum(List<Product> list) {
+		
+	}
+	
+}

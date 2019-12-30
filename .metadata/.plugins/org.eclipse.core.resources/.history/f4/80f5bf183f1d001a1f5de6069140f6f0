@@ -1,0 +1,22 @@
+package application;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class Program {
+
+	public static void main(String[] args) {
+		List<Integer> list = Arrays.asList(3, 4, 5, 10, 7);
+
+		// map é uma operação intermediaria q transforma lista
+		Stream<Integer> st1 = list.stream().map(x -> x * 10);
+
+		// toarray é uma operação terminal
+		System.out.println(Arrays.toString(st1.toArray()));
+		
+		//0 é o elemento inicial
+		int sum = list.stream().reduce(0, (x,y)->x+y);
+	}
+
+}

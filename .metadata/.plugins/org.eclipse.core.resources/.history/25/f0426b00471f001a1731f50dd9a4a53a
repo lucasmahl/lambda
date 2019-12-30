@@ -1,0 +1,27 @@
+package application;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Caminho do excel: ");
+		String path = sc.nextLine();
+		
+		try {
+			
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+		
+		
+		sc.close();
+		
+		
+	}
+
+}
